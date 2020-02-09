@@ -6,8 +6,8 @@ import SentryTypes from 'app/sentryTypes';
 import Button from 'app/components/button';
 import ListLink from 'app/components/links/listLink';
 import NavTabs from 'app/components/navTabs';
-
 import Tooltip from 'app/components/tooltip';
+import {IconAdd} from 'app/icons/iconAdd';
 
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 
@@ -40,9 +40,9 @@ export default withOrganization(
                 disabled={!canEditRule}
                 priority="primary"
                 size="small"
-                icon="icon-circle-add"
               >
-                {t('New Alert Rule')}
+                <IconAdd size="xs" circle />
+                &nbsp;{t('New Alert Rule')}
               </Button>
             </Tooltip>
           }

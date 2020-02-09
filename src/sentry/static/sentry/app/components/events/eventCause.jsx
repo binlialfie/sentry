@@ -5,12 +5,12 @@ import flatMap from 'lodash/flatMap';
 import styled from '@emotion/styled';
 
 import CommitRow from 'app/components/commitRow';
-import InlineSvg from 'app/components/inlineSvg';
 import withApi from 'app/utils/withApi';
 
 import {t} from 'app/locale';
 
 import {Panel} from 'app/components/panels';
+import {IconAdd, IconSubtract} from 'app/icons';
 
 const ExpandButton = styled('span')`
   cursor: pointer;
@@ -102,11 +102,11 @@ class EventCause extends React.Component {
               <ExpandButton onClick={() => this.setState({expanded: !expanded})}>
                 {expanded ? (
                   <React.Fragment>
-                    {t('Show less')} <InlineSvg src="icon-circle-subtract" size="16px" />
+                    {t('Show less')} <IconSubtract size="xs" circle />
                   </React.Fragment>
                 ) : (
                   <React.Fragment>
-                    {t('Show more')} <InlineSvg src="icon-circle-add" size="16px" />
+                    {t('Show more')} <IconAdd size="xs" circle />
                   </React.Fragment>
                 )}
               </ExpandButton>

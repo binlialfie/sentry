@@ -913,8 +913,8 @@ exports[`RuleBuilder renders 1`] = `
                                             onClick={[Function]}
                                             size="zero"
                                           >
-                                            <ForwardRef(render)
-                                              src="icon-circle-add"
+                                            <IconAdd
+                                              circle={true}
                                             />
                                           </ForwardRef(render)>
                                         </Tooltip>
@@ -1071,7 +1071,6 @@ exports[`RuleBuilder renders 1`] = `
       </SelectOwnersWrapper>
       <AddButton
         disabled={true}
-        icon="icon-circle-add"
         onClick={[Function]}
         priority="primary"
         size="small"
@@ -1079,7 +1078,6 @@ exports[`RuleBuilder renders 1`] = `
         <forwardRef<Button>
           className="css-f6y09s-AddButton e1hyuoc710"
           disabled={true}
-          icon="icon-circle-add"
           onClick={[Function]}
           priority="primary"
           size="small"
@@ -1089,7 +1087,6 @@ exports[`RuleBuilder renders 1`] = `
             className="css-f6y09s-AddButton e1hyuoc710"
             disabled={true}
             forwardRef={null}
-            icon="icon-circle-add"
             onClick={[Function]}
             priority="primary"
             size="small"
@@ -1133,44 +1130,28 @@ exports[`RuleBuilder renders 1`] = `
                       <span
                         className="css-19gcr2f-ButtonLabel edwq9my1"
                       >
-                        <Icon
-                          hasChildren={false}
-                          size="small"
+                        <IconAdd
+                          circle={true}
                         >
-                          <Component
-                            className="css-heib7e-Icon edwq9my2"
-                            hasChildren={false}
-                            size="small"
+                          <svg
+                            fill="currentColor"
+                            height="16px"
+                            viewBox="0 0 16 16"
+                            width="16px"
                           >
-                            <span
-                              className="css-heib7e-Icon edwq9my2"
-                              size="small"
-                            >
-                              <StyledInlineSvg
-                                size="12px"
-                                src="icon-circle-add"
-                              >
-                                <ForwardRef
-                                  className="css-nc0ns5-InlineSvg-StyledInlineSvg edwq9my3"
-                                  size="12px"
-                                  src="icon-circle-add"
-                                >
-                                  <svg
-                                    className="css-nc0ns5-InlineSvg-StyledInlineSvg edwq9my3"
-                                    height="12px"
-                                    viewBox={Object {}}
-                                    width="12px"
-                                  >
-                                    <use
-                                      href="#test"
-                                      xlinkHref="#test"
-                                    />
-                                  </svg>
-                                </ForwardRef>
-                              </StyledInlineSvg>
-                            </span>
-                          </Component>
-                        </Icon>
+                            <g>
+                              <path
+                                d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                              />
+                              <path
+                                d="M8,12a.76.76,0,0,1-.75-.75V4.72a.75.75,0,0,1,1.5,0v6.56A.76.76,0,0,1,8,12Z"
+                              />
+                              <path
+                                d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                              />
+                            </g>
+                          </svg>
+                        </IconAdd>
                       </span>
                     </Component>
                   </ButtonLabel>
@@ -1261,26 +1242,34 @@ exports[`RuleBuilder renders with suggestions 1`] = `
           className="css-11joymd-RuleCandidate e1hyuoc73"
           onClick={[Function]}
         >
-          <AddIcon
-            src="icon-circle-add"
+          <StyledIconAdd
+            circle={true}
           >
-            <ForwardRef
-              className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-              src="icon-circle-add"
+            <IconAdd
+              circle={true}
+              className="css-zq12t8-StyledIconAdd e1hyuoc74"
             >
               <svg
-                className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-                height="1em"
-                viewBox={Object {}}
-                width="1em"
+                className="css-zq12t8-StyledIconAdd e1hyuoc74"
+                fill="currentColor"
+                height="16px"
+                viewBox="0 0 16 16"
+                width="16px"
               >
-                <use
-                  href="#test"
-                  xlinkHref="#test"
-                />
+                <g>
+                  <path
+                    d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                  />
+                  <path
+                    d="M8,12a.76.76,0,0,1-.75-.75V4.72a.75.75,0,0,1,1.5,0v6.56A.76.76,0,0,1,8,12Z"
+                  />
+                  <path
+                    d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                  />
+                </g>
               </svg>
-            </ForwardRef>
-          </AddIcon>
+            </IconAdd>
+          </StyledIconAdd>
           <StyledTextOverflow>
             <div
               className="css-usqo6f-TextOverflow-StyledTextOverflow e1hyuoc72"
@@ -1305,26 +1294,34 @@ exports[`RuleBuilder renders with suggestions 1`] = `
           className="css-11joymd-RuleCandidate e1hyuoc73"
           onClick={[Function]}
         >
-          <AddIcon
-            src="icon-circle-add"
+          <StyledIconAdd
+            circle={true}
           >
-            <ForwardRef
-              className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-              src="icon-circle-add"
+            <IconAdd
+              circle={true}
+              className="css-zq12t8-StyledIconAdd e1hyuoc74"
             >
               <svg
-                className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-                height="1em"
-                viewBox={Object {}}
-                width="1em"
+                className="css-zq12t8-StyledIconAdd e1hyuoc74"
+                fill="currentColor"
+                height="16px"
+                viewBox="0 0 16 16"
+                width="16px"
               >
-                <use
-                  href="#test"
-                  xlinkHref="#test"
-                />
+                <g>
+                  <path
+                    d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                  />
+                  <path
+                    d="M8,12a.76.76,0,0,1-.75-.75V4.72a.75.75,0,0,1,1.5,0v6.56A.76.76,0,0,1,8,12Z"
+                  />
+                  <path
+                    d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                  />
+                </g>
               </svg>
-            </ForwardRef>
-          </AddIcon>
+            </IconAdd>
+          </StyledIconAdd>
           <StyledTextOverflow>
             <div
               className="css-usqo6f-TextOverflow-StyledTextOverflow e1hyuoc72"
@@ -1349,26 +1346,34 @@ exports[`RuleBuilder renders with suggestions 1`] = `
           className="css-11joymd-RuleCandidate e1hyuoc73"
           onClick={[Function]}
         >
-          <AddIcon
-            src="icon-circle-add"
+          <StyledIconAdd
+            circle={true}
           >
-            <ForwardRef
-              className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-              src="icon-circle-add"
+            <IconAdd
+              circle={true}
+              className="css-zq12t8-StyledIconAdd e1hyuoc74"
             >
               <svg
-                className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-                height="1em"
-                viewBox={Object {}}
-                width="1em"
+                className="css-zq12t8-StyledIconAdd e1hyuoc74"
+                fill="currentColor"
+                height="16px"
+                viewBox="0 0 16 16"
+                width="16px"
               >
-                <use
-                  href="#test"
-                  xlinkHref="#test"
-                />
+                <g>
+                  <path
+                    d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                  />
+                  <path
+                    d="M8,12a.76.76,0,0,1-.75-.75V4.72a.75.75,0,0,1,1.5,0v6.56A.76.76,0,0,1,8,12Z"
+                  />
+                  <path
+                    d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                  />
+                </g>
               </svg>
-            </ForwardRef>
-          </AddIcon>
+            </IconAdd>
+          </StyledIconAdd>
           <StyledTextOverflow>
             <div
               className="css-usqo6f-TextOverflow-StyledTextOverflow e1hyuoc72"
@@ -1393,26 +1398,34 @@ exports[`RuleBuilder renders with suggestions 1`] = `
           className="css-11joymd-RuleCandidate e1hyuoc73"
           onClick={[Function]}
         >
-          <AddIcon
-            src="icon-circle-add"
+          <StyledIconAdd
+            circle={true}
           >
-            <ForwardRef
-              className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-              src="icon-circle-add"
+            <IconAdd
+              circle={true}
+              className="css-zq12t8-StyledIconAdd e1hyuoc74"
             >
               <svg
-                className="css-k9p4nk-InlineSvg-AddIcon e1hyuoc74"
-                height="1em"
-                viewBox={Object {}}
-                width="1em"
+                className="css-zq12t8-StyledIconAdd e1hyuoc74"
+                fill="currentColor"
+                height="16px"
+                viewBox="0 0 16 16"
+                width="16px"
               >
-                <use
-                  href="#test"
-                  xlinkHref="#test"
-                />
+                <g>
+                  <path
+                    d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                  />
+                  <path
+                    d="M8,12a.76.76,0,0,1-.75-.75V4.72a.75.75,0,0,1,1.5,0v6.56A.76.76,0,0,1,8,12Z"
+                  />
+                  <path
+                    d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                  />
+                </g>
               </svg>
-            </ForwardRef>
-          </AddIcon>
+            </IconAdd>
+          </StyledIconAdd>
           <StyledTextOverflow>
             <div
               className="css-usqo6f-TextOverflow-StyledTextOverflow e1hyuoc72"
@@ -2658,8 +2671,8 @@ exports[`RuleBuilder renders with suggestions 1`] = `
                                             onClick={[Function]}
                                             size="zero"
                                           >
-                                            <ForwardRef(render)
-                                              src="icon-circle-add"
+                                            <IconAdd
+                                              circle={true}
                                             />
                                           </ForwardRef(render)>
                                         </Tooltip>
@@ -3112,7 +3125,6 @@ exports[`RuleBuilder renders with suggestions 1`] = `
       </SelectOwnersWrapper>
       <AddButton
         disabled={false}
-        icon="icon-circle-add"
         onClick={[Function]}
         priority="primary"
         size="small"
@@ -3120,7 +3132,6 @@ exports[`RuleBuilder renders with suggestions 1`] = `
         <forwardRef<Button>
           className="css-f6y09s-AddButton e1hyuoc710"
           disabled={false}
-          icon="icon-circle-add"
           onClick={[Function]}
           priority="primary"
           size="small"
@@ -3130,7 +3141,6 @@ exports[`RuleBuilder renders with suggestions 1`] = `
             className="css-f6y09s-AddButton e1hyuoc710"
             disabled={false}
             forwardRef={null}
-            icon="icon-circle-add"
             onClick={[Function]}
             priority="primary"
             size="small"
@@ -3174,44 +3184,28 @@ exports[`RuleBuilder renders with suggestions 1`] = `
                       <span
                         className="css-19gcr2f-ButtonLabel edwq9my1"
                       >
-                        <Icon
-                          hasChildren={false}
-                          size="small"
+                        <IconAdd
+                          circle={true}
                         >
-                          <Component
-                            className="css-heib7e-Icon edwq9my2"
-                            hasChildren={false}
-                            size="small"
+                          <svg
+                            fill="currentColor"
+                            height="16px"
+                            viewBox="0 0 16 16"
+                            width="16px"
                           >
-                            <span
-                              className="css-heib7e-Icon edwq9my2"
-                              size="small"
-                            >
-                              <StyledInlineSvg
-                                size="12px"
-                                src="icon-circle-add"
-                              >
-                                <ForwardRef
-                                  className="css-nc0ns5-InlineSvg-StyledInlineSvg edwq9my3"
-                                  size="12px"
-                                  src="icon-circle-add"
-                                >
-                                  <svg
-                                    className="css-nc0ns5-InlineSvg-StyledInlineSvg edwq9my3"
-                                    height="12px"
-                                    viewBox={Object {}}
-                                    width="12px"
-                                  >
-                                    <use
-                                      href="#test"
-                                      xlinkHref="#test"
-                                    />
-                                  </svg>
-                                </ForwardRef>
-                              </StyledInlineSvg>
-                            </span>
-                          </Component>
-                        </Icon>
+                            <g>
+                              <path
+                                d="M11.28,8.75H4.72a.75.75,0,1,1,0-1.5h6.56a.75.75,0,1,1,0,1.5Z"
+                              />
+                              <path
+                                d="M8,12a.76.76,0,0,1-.75-.75V4.72a.75.75,0,0,1,1.5,0v6.56A.76.76,0,0,1,8,12Z"
+                              />
+                              <path
+                                d="M8,16a8,8,0,1,1,8-8A8,8,0,0,1,8,16ZM8,1.53A6.47,6.47,0,1,0,14.47,8,6.47,6.47,0,0,0,8,1.53Z"
+                              />
+                            </g>
+                          </svg>
+                        </IconAdd>
                       </span>
                     </Component>
                   </ButtonLabel>

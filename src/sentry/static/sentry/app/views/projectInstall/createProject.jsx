@@ -18,6 +18,7 @@ import SentryTypes from 'app/sentryTypes';
 import Tooltip from 'app/components/tooltip';
 import getPlatformName from 'app/utils/getPlatformName';
 import space from 'app/styles/space';
+import {IconAdd} from 'app/icons/iconAdd';
 import withApi from 'app/utils/withApi';
 import withOrganization from 'app/utils/withOrganization';
 import withTeams from 'app/utils/withTeams';
@@ -168,14 +169,15 @@ class CreateProject extends React.Component {
                     borderless
                     data-test-id="create-team"
                     type="button"
-                    icon="icon-circle-add"
                     onClick={() =>
                       openCreateTeamModal({
                         organization,
                         onClose: ({slug}) => this.setState({team: slug}),
                       })
                     }
-                  />
+                  >
+                    <IconAdd circle />
+                  </Button>
                 </Tooltip>
               </TeamSelectInput>
             </div>
